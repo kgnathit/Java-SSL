@@ -12,10 +12,9 @@ public class LoginClient {
          // obtain SSLSocketFactory for creating SSLSockets
          SSLSocketFactory socketFactory =  ( SSLSocketFactory ) SSLSocketFactory.getDefault();
          // create SSLSocket from factory
-         SSLSocket socket =   ( SSLSocket ) socketFactory.createSocket(  "localhost", 7070 ); 
+         SSLSocket socket =   ( SSLSocket ) socketFactory.createSocket(  "localhost", 8030 ); 
          // create PrintWriter for sending login to server
-         PrintWriter output = new PrintWriter( 
-            new OutputStreamWriter( socket.getOutputStream() ) );
+         PrintWriter output = new PrintWriter( new OutputStreamWriter( socket.getOutputStream() ) );
           // prompt user for user name
          String userName = JOptionPane.showInputDialog( null, "Enter User Name:" );
           // send user name to server
