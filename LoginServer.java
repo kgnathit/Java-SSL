@@ -4,8 +4,8 @@ import java.io.*;
 import javax.net.ssl.*;
 
 public class LoginServer {
-   private static final String CORRECT_USER_NAME = "Mark";
-   private static final String CORRECT_PASSWORD = "CNT 4714";
+   private static final String CORRECT_USER_NAME = "User";
+   private static final String CORRECT_PASSWORD = "Password";
    private SSLServerSocket serverSocket;
    
    // LoginServer constructor
